@@ -23,10 +23,11 @@ const Layout = (props) => (
       }
     `}</style>
     <style jsx global>{`
-   
       :root {
         --color-acento: #3fc1ec;
         --color-secundario: rgb(82, 82, 82);
+        font-size: calc(0.5em + 1vw);
+        font-size: 16px;
       }
 
       html,
@@ -39,7 +40,11 @@ const Layout = (props) => (
 
       * {
         box-sizing: border-box;
-        font-size: calc(0.5em + 1vw);
+      }
+      @media (max-width: 700px) {
+        :root {
+          font-size: 12px;
+        }
       }
     `}</style>
   </div>

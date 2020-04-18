@@ -15,14 +15,14 @@ function NewsCard(props) {
       </div>
       <style jsx>{`
         .newsCard {
-          height: 25em;
+          height: 20em;
           background: #222;
           margin: 1em;
-          font-size: 0.7rem;
+          font-size: 1.5rem;
           text-decoration: none;
           display: flex;
           flex-direction: column;
-          flex: 1 1 20em;
+          flex: 1 0 15em;
           border-radius: 1em;
         }
 

@@ -48,13 +48,13 @@ const NavBar = () => {
       </nav>
       <style jsx>{`
         header {
-          font-size: 0.2rem;
+          font-size: 1rem;
           background: #222;
           display: flex;
           justify-content: space-evenly;
           align-items: center;
           width: 100%;
-          padding: 1em;
+          padding: 0.5em;
           flex-wrap: wrap;
           position: sticky;
           top: 0;
@@ -63,14 +63,14 @@ const NavBar = () => {
 
         .logo {
           font-weight: bold;
-          font-size: 1.5em;
+          font-size: 1em;
           background: var(--color-acento);
           font-family: "Raleway", sans-serif;
           border-radius: 10em;
           justify-content: center;
           align-items: center;
           padding: 1em 3em;
-          margin: 3em;
+          margin: 0em 3em ;
           color: #222;
           display: flex;
           justify-content: space-around;
@@ -78,7 +78,7 @@ const NavBar = () => {
         }
 
         nav {
-          font-size: 0.8em;
+          font-size:1em;
           display: flex;
           justify-content: space-evenly;
           align-items: center;
@@ -87,7 +87,7 @@ const NavBar = () => {
           padding: 1em;
           justify-content: center;
           align-items: center;
-          flex: 1 0 30em;
+          flex: 1 0 20em;
         }
 
         nav a {
