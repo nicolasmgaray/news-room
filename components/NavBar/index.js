@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
@@ -7,6 +7,14 @@ import { useRouter } from "next/router";
 const NavBar = () => {
   const router = useRouter();
   const { query, route } = router;
+
+  useEffect(() => {
+    router.events.on("routeChangeStart", () => {
+      window.NProgress.start();
+    });
+    router.events.on("routeChangeComplete", () => window.NProgress.done());
+    router.events.on("routeChangeError", () => window.NProgress.done());
+  }, []);
 
   const links = [
     { to: "/categories/[id]", catId: 1, title: "POLITICA" },
@@ -27,7 +35,7 @@ const NavBar = () => {
           <a className={"/" === route ? "active" : null}>HOME</a>
         </Link>
         {links.map((x) => (
-          <Link href={x.to} as={`/categories/${x.catId}`}>
+          <Link key={x.catId} href={x.to} as={`/categories/${x.catId}`}>
             <a
               className={
                 x.to === route && query.id == x.catId ? "active" : null
@@ -67,7 +75,6 @@ const NavBar = () => {
           display: flex;
           justify-content: space-around;
           align-items: center;
-         
         }
 
         nav {

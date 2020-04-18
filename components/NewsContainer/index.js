@@ -5,12 +5,11 @@ import Spinner from "../Spinner";
 
 const NewsContainer = ({ data }) => {
   const [index, setIndex] = useState(9);
-  console.log(index);
   const visible = data.slice(0, index);
 
   useEffect(() => {
     setIndex(9);
-  },[data]);
+  }, [data]);
 
   const showMore = () => {
     setIndex(index + 9);

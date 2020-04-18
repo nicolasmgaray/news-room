@@ -6,6 +6,8 @@ const Layout = (props) => (
     <Head>
       <title>News Room</title>
       <link rel="icon" href="/favicon.ico" />
+      <link type="text/css" rel="stylesheet" href="/nprogress.css" />
+      <script type="text/javascript" src="/nprogress.js"></script>
     </Head>
     <NavBar />
     {props.children}
@@ -21,11 +23,12 @@ const Layout = (props) => (
       }
     `}</style>
     <style jsx global>{`
+   
       :root {
         --color-acento: #3fc1ec;
         --color-secundario: rgb(82, 82, 82);
       }
-      
+
       html,
       body {
         padding: 0;

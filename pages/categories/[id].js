@@ -3,7 +3,6 @@ import NewsContainer from "../../components/NewsContainer";
 import { getCategory } from "../../api";
 
 const Categories = ({ data }) => {
-  console.log(data[0]);
   return (
     <Layout>
       <NewsContainer data={data}></NewsContainer>
