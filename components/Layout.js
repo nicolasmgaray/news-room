@@ -7,6 +7,10 @@ const Layout = (props) => (
       <title>News Room</title>
       <link rel="icon" href="/favicon.ico" />
       <link type="text/css" rel="stylesheet" href="/nprogress.css" />
+      <script
+        src="https://kit.fontawesome.com/c0b4aec906.js"
+        crossorigin="anonymous"
+      ></script>
       <script type="text/javascript" src="/nprogress.js"></script>
     </Head>
     <NavBar />
@@ -23,6 +27,8 @@ const Layout = (props) => (
       }
     `}</style>
     <style jsx global>{`
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+
       :root {
         --color-acento: #3fc1ec;
         --color-secundario: rgb(82, 82, 82);

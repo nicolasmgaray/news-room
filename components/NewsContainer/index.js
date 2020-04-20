@@ -45,7 +45,7 @@ const NewsContainer = ({ data }) => {
       <style jsx global>{`
         .newsContainer {
           width: 100%;
-          padding: 1em 7em;
+          padding: 1em 10em;
           display: flex;
           justify-content: space-evenly;
           align-items: center;

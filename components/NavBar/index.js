@@ -27,7 +27,7 @@ const NavBar = () => {
   return (
     <header>
       <div className="logo">
-        <FontAwesomeIcon icon={faBullhorn} />
+      <i className="fas fa-bullhorn"></i>
         <span> NEWSROOM</span>
       </div>
       <nav>
@@ -63,18 +63,23 @@ const NavBar = () => {
 
         .logo {
           font-weight: bold;
-          font-size: 1em;
-          background: var(--color-acento);
+          font-size:1.5em;
+          color: var(--color-acento);
           font-family: "Raleway", sans-serif;
           border-radius: 10em;
           justify-content: center;
           align-items: center;
           padding: 1em 3em;
           margin: 0em 3em ;
-          color: #222;
+        
           display: flex;
           justify-content: space-around;
           align-items: center;
+        }
+
+        .logo i {
+          font-size:1.5em;
+          margin-right:.5em;
         }
 
         nav {
