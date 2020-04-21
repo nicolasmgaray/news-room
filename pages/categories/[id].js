@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout";
+import moment from "moment";
 import NewsContainer from "../../components/NewsContainer";
-import { getCategory } from "../../api";
+import { getCategory , getLatest} from "../../api";
 
 const Categories = ({ data }) => {
   return (
@@ -12,7 +13,13 @@ const Categories = ({ data }) => {
 
 export const getServerSideProps = async ({ params }) => {
   const { id } = params;
-  let data = await getCategory(id);
+  let data;
+  if (id == 0) {
+    const today = moment().format("YYYY-MM-DD");   
+    data = await getLatest(today);
+  }
+  else
+   data = await getCategory(id);
 
   return {
     props: { data: data },

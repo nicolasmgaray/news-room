@@ -16,7 +16,22 @@ const NewsContainer = ({ data }) => {
   };
 
   if (data.length == 0)
-    return <div className="endMessage">Error al cargar las noticias !</div>;
+    return (
+      <div className="endMessage">
+        Error al cargar las noticias !{" "}
+        <style jsx>{`
+          .endMessage {
+            color: var(--color-acento);
+            width: 100%;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            margin: 1em;
+            font-weight: bold;
+          }
+        `}</style>
+      </div>
+    );
 
   return (
     <InfiniteScroll
