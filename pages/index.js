@@ -13,6 +13,7 @@ const Home = ({ data }) => {
 
 export const getServerSideProps = async (ctx) => {
   const today = moment().format("YYYY-MM-DD");
+  console.log(today)
   let data = await getLatest(today);
 
   return {

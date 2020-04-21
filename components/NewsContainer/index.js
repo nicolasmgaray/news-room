@@ -15,6 +15,9 @@ const NewsContainer = ({ data }) => {
     setIndex(index + 9);
   };
 
+  if (data.length == 0)
+    return <div className="endMessage">Error al cargar las noticias !</div>;
+
   return (
     <InfiniteScroll
       next={showMore}
