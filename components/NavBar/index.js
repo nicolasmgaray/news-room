@@ -77,6 +77,11 @@ const NavBar = () => {
           align-items: center;
         }
 
+        .logo img{
+          width:auto;
+          heigth: 2em;
+        }
+
         .logo i {
           font-size:1.5em;
           margin-right:.5em;
