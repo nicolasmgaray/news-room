@@ -6,11 +6,7 @@ const Layout = (props) => (
     <Head>
       <title>News Room</title>
       <link rel="icon" href="/favicon.ico" />
-      <link type="text/css" rel="stylesheet" href="/nprogress.css" />
-      <script
-        src="https://kit.fontawesome.com/c0b4aec906.js"
-        crossorigin="anonymous"
-      ></script>
+      <link type="text/css" rel="stylesheet" href="/nprogress.css" />     
       <script type="text/javascript" src="/nprogress.js"></script>
     </Head>
     <NavBar />
