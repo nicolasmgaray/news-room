@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -27,7 +26,8 @@ const NavBar = () => {
   return (
     <header>
       <div className="logo">
-      <i className="fas fa-bullhorn"></i>
+      <img  src="bullhorn.svg" 
+    alt="logo"></i>
         <span> NEWSROOM</span>
       </div>
       <nav>
