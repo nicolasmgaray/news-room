@@ -26,7 +26,7 @@ const NavBar = () => {
   return (
     <header>
       <div className="logo">
-      <img  src="bullhorn.svg" 
+      <img  src="/bullhorn.svg" 
     alt="logo" />
         <span> NEWSROOM</span>
       </div>
