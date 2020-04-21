@@ -79,7 +79,7 @@ const NavBar = () => {
 
         .logo img{
           width:auto;
-          height: 2em;
+          height: 1.5em;
           margin-right: 0.5em;
         }
 
