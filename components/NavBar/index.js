@@ -27,7 +27,7 @@ const NavBar = () => {
     <header>
       <div className="logo">
       <img  src="bullhorn.svg" 
-    alt="logo"></i>
+    alt="logo" />
         <span> NEWSROOM</span>
       </div>
       <nav>
